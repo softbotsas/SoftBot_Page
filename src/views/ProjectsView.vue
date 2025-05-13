@@ -34,7 +34,6 @@
               </div>
               <div class="project-links">
                 <a v-if="megaSend.liveLink" :href="megaSend.liveLink" target="_blank" class="project-link-button primary">
-                  <i class="fas fa-rocket"></i> Ver Demo
                 </a>
                 <a v-if="megaSend.repoLink" :href="megaSend.repoLink" target="_blank" class="project-link-button secondary">
                   <i class="fab fa-github"></i> Repositorio

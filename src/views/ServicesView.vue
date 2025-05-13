@@ -108,7 +108,7 @@ const services = ref([
       'Metodologías Ágiles (Scrum/Kanban) para flexibilidad total.',
       'Pruebas unitarias, de integración y E2E.'
     ],
-    technologies: ['Python (Django/Flask)', 'Node.js (Express/NestJS)', 'Java (Spring Boot)', 'Ruby on Rails', 'Vue.js', 'React', 'Angular', 'SQL & NoSQL DBs'],
+    technologies: ['Python (Django/Flask)', 'Node.js (Express/NestJS)', 'Java (Spring Boot)', 'Ruby on Rails', 'Vue.js', 'Angular', 'SQL & NoSQL DBs'],
     imageSrc: '/images/desarrollo.jpeg', // Reemplazar con imagen
     ctaLink: '/contacto?servicio=desarrollo-medida'
   },

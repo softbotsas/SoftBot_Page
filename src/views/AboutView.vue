@@ -49,6 +49,7 @@
                   <div class="tech-item">JavaScript</div>
                   <div class="tech-item">Python</div>
                   <div class="tech-item">Vue.js</div>
+                  <div class="tech-item">Angular</div>
                   <div class="tech-item">Node.js</div>
                   <div class="tech-item">AWS</div>
                 </div>
