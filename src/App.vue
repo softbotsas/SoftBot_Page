@@ -10,6 +10,7 @@
       </router-view>
     </main>
     
+    <Whats />
     <Footer />
   </div>
 </template>
@@ -17,12 +18,15 @@
 <script>
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
+import Whats from './components/Whats.vue';
+
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    Footer
+    Footer,
+    Whats
   }
 }
 </script>

@@ -12,8 +12,8 @@
           </div>
           <p class="hero-subtitle">CODE THE FUTURE. <span class="highlight">BUILD THE IMPOSSIBLE.</span></p>
           <div class="hero-buttons">
-            <RouterLink to="/servicios" class="btn-primary"><i class="fas fa-cogs"></i> Explorar Soluciones</RouterLink>
-            <RouterLink to="/contacto" class="btn-outline"><i class="fas fa-headset"></i> Contáctanos</RouterLink>
+            <RouterLink to="/services" class="btn-primary"><i class="fas fa-cogs"></i> Explorar Soluciones</RouterLink>
+            <RouterLink to="/contact" class="btn-outline"><i class="fas fa-headset"></i> Contáctanos</RouterLink>
           </div>
         </div>
         <div class="hero-image animate-on-scroll" data-animation="fadeInRight">
