@@ -62,10 +62,10 @@
 <script setup>
 // --- Script sin cambios respecto a la versión anterior que ya tiene el SVG ---
 import { ref, computed, watch, onMounted } from 'vue';
-const phoneNumber = '573001234567';
+const phoneNumber = '573017693004';
 const defaultMessageToUser = '¡Hola! Soy el asistente virtual de Softbot. ¿Listo para iniciar una conversación sobre tu próximo proyecto?';
 const prefilledMessageForWhatsApp = 'Hola Softbot, estoy interesado en sus servicios y me gustaría recibir más información.';
-const profilePictureSrc = '/images/logo-softbot-avatar.png'; // Asegúrate que esta imagen exista
+const profilePictureSrc = '/images/perfil.jpg'; // Asegúrate que esta imagen exista
 const supportName = 'Softbot Asistente';
 const supportStatus = 'En línea | Responde al instante';
 const isChatPanelOpen = ref(false);
