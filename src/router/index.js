@@ -4,12 +4,18 @@ import ServicesView from '@/views/ServicesView.vue';
 import ProjectsView from '@/views/ProjectsView.vue';
 import AboutView from '@/views/AboutView.vue';
 import ContactView from '@/views/ContactView.vue';
+import Trabajo from '@/views/Trabajo.vue';
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: Home
+  },
+  {
+    path: '/trabajo',
+    name: 'trabajo',
+    component: Trabajo
   },
     {
     path: '/services',
