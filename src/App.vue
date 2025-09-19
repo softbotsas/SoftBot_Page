@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <!-- Loading Screen -->
+    <LoadingScreen :is-loading="isLoading" @loading-complete="handleLoadingComplete" />
+    
     <Navbar />
     
     <main class="main-content">
@@ -16,17 +19,31 @@
 </template>
 
 <script>
+import { ref } from 'vue';
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import Whats from './components/Whats.vue';
-
+import LoadingScreen from './components/LoadingScreen.vue';
 
 export default {
   name: 'App',
   components: {
     Navbar,
     Footer,
-    Whats
+    Whats,
+    LoadingScreen
+  },
+  setup() {
+    const isLoading = ref(true);
+
+    const handleLoadingComplete = () => {
+      isLoading.value = false;
+    };
+
+    return {
+      isLoading,
+      handleLoadingComplete
+    };
   }
 }
 </script>

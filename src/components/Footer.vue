@@ -6,6 +6,11 @@
         <div class="terminal-line">// Copyright © {{ currentYear }} All rights reserved</div>
         <div class="terminal-line">// Version 1.0.0</div>
         <div class="terminal-line">// Last update: {{ lastUpdate }}</div>
+        <div class="terminal-line">
+          <router-link to="/privacy-policy" class="privacy-link">
+            // Política de Privacidad
+          </router-link>
+        </div>
         <div class="terminal-line blink">//_</div>
       </div>
       
@@ -89,10 +94,21 @@ export default {
   color: var(--text-secondary);
   font-size: 1.25rem;
   transition: color 0.3s ease;
-  
-  &:hover {
-    color: var(--terminal-green);
-  }
+}
+
+.social-link:hover {
+  color: var(--terminal-green);
+}
+
+.privacy-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Courier New', monospace;
+}
+
+.privacy-link:hover {
+  color: var(--terminal-green);
 }
 
 /* Iconos */

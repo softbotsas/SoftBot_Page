@@ -5,6 +5,7 @@ import ProjectsView from '@/views/ProjectsView.vue';
 import AboutView from '@/views/AboutView.vue';
 import ContactView from '@/views/ContactView.vue';
 import Trabajo from '@/views/Trabajo.vue';
+import PrivacyPolicyView from '@/views/PrivacyPolicyView.vue';
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
     name: 'contact',
     component: ContactView
   },
+  {
+    path: '/privacy-policy',
+    name: 'privacy-policy',
+    component: PrivacyPolicyView
+  }
 
   // Aquí agregaremos más rutas luego
 ];

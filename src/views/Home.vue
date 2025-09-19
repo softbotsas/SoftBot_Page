@@ -560,36 +560,137 @@ $breakpoint-xl: 1200px; $breakpoint-lg: 992px; $breakpoint-md: 768px; $breakpoin
 
 /* --- RESPONSIVE BREAKPOINTS --- */
 @media (max-width: $breakpoint-lg) {
-  .hero-content { flex-direction: column; text-align: center; padding-top: $spacing-xxxl; gap: $spacing-xl; }
+  .hero-content { 
+    flex-direction: column; 
+    text-align: center; 
+    padding-top: $spacing-xxxl; 
+    gap: $spacing-xl; 
+  }
   .hero-text { order: 2; }
-  .hero-image { order: 1; width: 100%; max-width: 500px; margin-bottom: $spacing-lg;} // Terminal más pequeño en tablet
+  .hero-image { 
+    order: 1; 
+    width: 100%; 
+    max-width: 500px; 
+    margin-bottom: $spacing-lg;
+  }
   .logo-title { justify-content: center; }
   .hero-buttons { justify-content: center; }
   .philosophy-grid { text-align: center; }
-  .philosophy-text ul { justify-content: center; li { justify-content: center; } }
+  .philosophy-text ul { 
+    justify-content: center; 
+    li { 
+      justify-content: center; 
+    } 
+  }
 }
 
 @media (max-width: $breakpoint-md) {
   .section-padding { padding: $spacing-xxl 0; }
-  .hero-section { min-height: auto; padding-bottom: $spacing-xxl; } // Altura automática en móvil
+  .hero-section { 
+    min-height: auto; 
+    padding-bottom: $spacing-xxl; 
+  }
+  .hero-content {
+    padding-top: $spacing-xxl;
+    gap: $spacing-lg;
+  }
   .logo-img { height: 50px; }
-  .hero-main-title { font-size: clamp(2.5rem, 10vw, 3.5rem); }
-  .hero-subtitle { font-size: clamp(1.1rem, 4vw, 1.25rem); }
-  .hero-buttons { flex-direction: column; align-items: center; .btn-primary, .btn-outline { width: 100%; max-width: 300px;} }
-  .code-terminal { transform: none; &:hover { transform: none; } } // Sin efecto 3D en móvil
-  .terminal-body { min-height: 150px; padding: $spacing-md;}
+  .hero-main-title { 
+    font-size: clamp(2.5rem, 10vw, 3.5rem); 
+  }
+  .hero-subtitle { 
+    font-size: clamp(1.1rem, 4vw, 1.25rem); 
+  }
+  .hero-buttons { 
+    flex-direction: column; 
+    align-items: center; 
+    gap: $spacing-md;
+  }
+  .hero-buttons .btn-primary, 
+  .hero-buttons .btn-outline { 
+    width: 100%; 
+    max-width: 300px;
+  }
+  .code-terminal { 
+    transform: none; 
+  }
+  .code-terminal:hover { 
+    transform: none; 
+  }
+  .terminal-body { 
+    min-height: 150px; 
+    padding: $spacing-md;
+  }
   .code-line { font-size: 0.85rem; }
   .services-grid { grid-template-columns: 1fr; }
-  .philosophy-visual .matrix-sphere { width: 250px; height: 250px; i { font-size: 4rem;} }
-  .tech-icons-grid { gap: $spacing-lg; .tech-icon {font-size: 3rem;} }
-  .final-cta-section { h2 {font-size: clamp(1.8rem, 6vw, 2.2rem); } p {font-size: 1.1rem;} .btn-light{width: 90%; max-width: 350px;}}
+  .philosophy-visual .matrix-sphere { 
+    width: 250px; 
+    height: 250px; 
+  }
+  .philosophy-visual .matrix-sphere i { 
+    font-size: 4rem;
+  }
+  .tech-icons-grid { 
+    gap: $spacing-lg; 
+  }
+  .tech-icons-grid .tech-icon {
+    font-size: 3rem;
+  }
+  .final-cta-section h2 {
+    font-size: clamp(1.8rem, 6vw, 2.2rem); 
+  }
+  .final-cta-section p {
+    font-size: 1.1rem;
+  }
+  .final-cta-section .btn-light {
+    width: 90%; 
+    max-width: 350px;
+  }
 }
 
 @media (max-width: $breakpoint-sm) {
-   .section-padding { padding: $spacing-xl 0; }
-   .container { padding: 0 $spacing-md; }
-   .hero-subtitle { margin-bottom: $spacing-lg; }
-   .scroll-down-indicator { font-size: 1.5rem; bottom: $spacing-lg;}
+  .section-padding { padding: $spacing-xl 0; }
+  .container { padding: 0 $spacing-md; }
+  .hero-content {
+    padding: $spacing-lg $spacing-md;
+  }
+  .hero-subtitle { margin-bottom: $spacing-lg; }
+  .scroll-down-indicator { 
+    font-size: 1.5rem; 
+    bottom: $spacing-lg;
+  }
+  .logo-title {
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+  .logo-img {
+    height: 40px;
+  }
+  .hero-main-title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+  }
+  .service-card {
+    padding: $spacing-lg $spacing-md;
+  }
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: $spacing-lg;
+  }
+  .philosophy-visual .matrix-sphere {
+    width: 200px;
+    height: 200px;
+  }
+  .tech-icons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-md;
+  }
+  .tech-icons-grid .tech-icon {
+    font-size: 2.5rem;
+  }
 }
 
 </style>
