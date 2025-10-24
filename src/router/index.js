@@ -6,6 +6,7 @@ import AboutView from '@/views/AboutView.vue';
 import ContactView from '@/views/ContactView.vue';
 import Trabajo from '@/views/Trabajo.vue';
 import PrivacyPolicyView from '@/views/PrivacyPolicyView.vue';
+import MegaSendView from '@/views/MegaSendView.vue';
 
 const routes = [
   {
@@ -27,6 +28,11 @@ const routes = [
     path: '/projects',
     name: 'projects',
     component: ProjectsView
+  },
+  {
+    path: '/projects/megasend',
+    name: 'megasend',
+    component: MegaSendView
   },
         {
     path: '/about',

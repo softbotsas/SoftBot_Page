@@ -33,8 +33,9 @@
                 <span v-for="tech in megaSend.technologies" :key="tech" class="tech-tag">{{ tech }}</span>
               </div>
               <div class="project-links">
-                <a v-if="megaSend.liveLink" :href="megaSend.liveLink" target="_blank" class="project-link-button primary">
-                </a>
+                <router-link v-if="megaSend.liveLink" :to="megaSend.liveLink" class="project-link-button primary">
+                  <i class="fas fa-arrow-right"></i> Ver más
+                </router-link>
                 <a v-if="megaSend.repoLink" :href="megaSend.repoLink" target="_blank" class="project-link-button secondary">
                   <i class="fab fa-github"></i> Repositorio
                 </a>
@@ -83,7 +84,7 @@ const megaSend = ref({
   description: 'Solución robusta para envíos masivos y automatizados a través de WhatsApp. Ideal para marketing, notificaciones y comunicación directa con clientes, integrando análisis y gestión de campañas.',
   technologies: ['Python', 'Cloud API', 'MongoDB'],
   imageSrc: '/images/megasend.png', // Reemplazar con imagen real
-  liveLink: '#demo-megasend', // Reemplazar
+  liveLink: '/projects/megasend', // Enlace a la subsección de MegaSend
   repoLink: null, // O '#github-megasend'
   featured: true
 });

@@ -171,25 +171,27 @@ export default {
   font-size: 0.95rem;
   position: relative;
   transition: color 0.3s ease;
-  
-  &:hover, &.router-link-active {
-    color: var(--terminal-green);
-    
-    &::after {
-      width: 100%;
-    }
-  }
-  
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--terminal-green);
-    transition: width 0.3s ease;
-  }
+}
+
+.nav-link:hover, 
+.nav-link.router-link-active {
+  color: var(--terminal-green);
+}
+
+.nav-link:hover::after, 
+.nav-link.router-link-active::after {
+  width: 100%;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--terminal-green);
+  transition: width 0.3s ease;
 }
 
 .link-number {
